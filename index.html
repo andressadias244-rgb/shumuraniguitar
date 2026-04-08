@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shumurani Guitar | Luthieria Profissional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .logo-container img {
+            max-height: 80px; /* Ajuste conforme o formato da sua logo */
+            filter: brightness(0) invert(1); /* Torna a logo branca para o menu escuro */
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <nav class="flex justify-between items-center px-6 py-4 bg-stone-900 text-white sticky top-0 z-50 shadow-xl">
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/200x80?text=SHUMURANI+LOGO" alt="Shumurani Guitar Logo" class="h-12 w-auto">
+        </div>
+        <ul class="hidden md:flex space-x-8 font-medium">
+            <li><a href="#servicos" class="hover:text-amber-500 transition">Serviços</a></li>
+            <li><a href="#produtos" class="hover:text-amber-500 transition">Peças & Upgrades</a></li>
+            <li><a href="#sobre" class="hover:text-amber-500 transition">Sobre</a></li>
+        </ul>
+        <a href="https://api.whatsapp.com/send/?phone=5524992198446&text=Olá! Gostaria de um orçamento para meu instrumento.&type=phone_number&app_absent=0&utm_source=ig" 
+           target="_blank" 
+           class="bg-amber-600 hover:bg-amber-700 px-6 py-2 rounded-full font-bold transition">
+            Orçamento
+        </a>
+    </nav>
+
+    <header class="hero-bg h-[70vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl mb-6">Excelência em Luthieria.</h1>
+            <p class="text-xl mb-8 text-stone-300 font-light">Cuide do seu instrumento com quem entende de performance e sonoridade.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://api.whatsapp.com/send/?phone=5524992198446&text&type=phone_number&app_absent=0&utm_source=ig" class="bg-amber-600 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-amber-700 transition shadow-lg">Falar com Luthier</a>
+                <a href="#servicos" class="border border-white/30 px-8 py-4 rounded-lg text-lg font-bold hover:bg-white hover:text-black transition backdrop-blur-sm">Conhecer Serviços</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicos" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl mb-4 italic">Serviços de Luthieria</h2>
+            <p class="text-stone-500">Manutenção técnica especializada para Guitarra, Baixo e Violão.</p>
+            <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-600 hover:-translate-y-2 transition-transform">
+                <h3 class="text-xl font-bold mb-3 uppercase">Regulagem Standard</h3>
+                <p class="text-sm text-stone-600 mb-4">Ajuste de tensor, oitavas, altura de cordas, limpeza de escala e hidratação.</p>
+                <span class="text-amber-700 font-bold">Essencial</span>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-600 hover:-translate-y-2 transition-transform">
+                <h3 class="text-xl font-bold mb-3 uppercase">Retífica de Trastes</h3>
+                <p class="text-sm text-stone-600 mb-4">Nivelamento preciso, coroamento e polimento espelhado para evitar trastejos.</p>
+                <span class="text-amber-700 font-bold">Performance</span>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-600 hover:-translate-y-2 transition-transform">
+                <h3 class="text-xl font-bold mb-3 uppercase">Eletrônica</h3>
+                <p class="text-sm text-stone-600 mb-4">Blindagem com cobre, troca de captadores, potenciômetros e re-fiação completa.</p>
+                <span class="text-amber-700 font-bold">Timbre Puro</span>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-600 hover:-translate-y-2 transition-transform">
+                <h3 class="text-xl font-bold mb-3 uppercase">Nut & Rastilho</h3>
+                <p class="text-sm text-stone-600 mb-4">Confecção artesanal em Osso ou Latão para melhor sustentação e tom.</p>
+                <span class="text-amber-700 font-bold">Custom</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="bg-stone-200 py-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl mb-12 italic">Peças & Upgrades</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1615190284325-446dc7aa0168?auto=format&fit=crop&q=80&w=600" alt="Captadores" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Captadores Custom</h4>
+                        <p class="text-stone-600 text-sm mb-4">Upgrade essencial para transformar o som do seu instrumento.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=5524992198446&text=Quero saber sobre os captadores" class="text-amber-600 font-bold hover:underline italic text-sm">Consultar Modelos →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1541689592655-f5f52824a3b1?auto=format&fit=crop&q=80&w=600" alt="Hardware" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Hardware High-End</h4>
+                        <p class="text-stone-600 text-sm mb-4">Tarraxas com trava, pontes robustas e componentes de alta precisão.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=5524992198446&text=Quero saber sobre hardware" class="text-amber-600 font-bold hover:underline italic text-sm">Ver Estoque →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1598112972545-8437965b63c0?auto=format&fit=crop&q=80&w=600" alt="Encordoamentos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Acessórios Premium</h4>
+                        <p class="text-stone-600 text-sm mb-4">Encordoamentos selecionados e cases para proteção máxima.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=5524992198446&text=Quero saber sobre acessórios" class="text-amber-600 font-bold hover:underline italic text-sm">Ver Lista →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 px-6 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+            <h2 class="text-4xl mb-6 italic">Shumurani Guitar</h2>
+            <p class="text-stone-600 leading-relaxed mb-4">
+                Com anos de experiência na bancada, a Shumurani Guitar nasceu da paixão pela luthieria técnica. Nossa missão é extrair o máximo potencial de cada instrumento, respeitando sua história e a necessidade de cada músico.
+            </p>
+            <p class="text-stone-600 leading-relaxed">
+                Cada serviço é executado com ferramentas de precisão e um olhar clínico, garantindo que o seu instrumento não apenas toque melhor, mas tenha uma vida útil prolongada.
+            </p>
+        </div>
+        <div class="md:w-1/2 bg-stone-900 p-2 rounded-lg rotate-3 shadow-2xl">
+            <div class="aspect-square bg-stone-800 flex items-center justify-center text-white text-center p-8">
+                <p class="italic text-stone-400">"Sua busca pelo timbre perfeito termina aqui."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
+            <div>
+                <h4 class="font-bold text-xl mb-4 text-amber-500 italic">SHUMURANI GUITAR</h4>
+                <p class="text-stone-400 text-sm">Luthieria profissional especializada em cordas.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Siga nas Redes</h4>
+                <div class="flex justify-center md:justify-start space-x-6 text-2xl">
+                    <a href="https://www.instagram.com/shumuraniguitarrepair/" target="_blank" class="hover:text-amber-500 transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5524992198446&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="hover:text-amber-500 transition">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Localização</h4>
+                <p class="text-stone-400 text-sm italic">Atendimento com hora marcada.<br>Rio de Janeiro / Região.</p>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-stone-800 text-stone-500 text-xs uppercase tracking-widest">
+            © 2025 Shumurani Guitar - Crafting Tone with Precision.
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send/?phone=5524992198446&text=Olá! Gostaria de um orçamento.&type=phone_number&app_absent=0&utm_source=ig" 
+       target="_blank"
+       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition z-50">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+</body>
+</html>
